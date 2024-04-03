@@ -18,28 +18,28 @@
 
 h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 50px;
+    font-size: 4rem;
     text-align: center;
     color: var(--navy);
 }
 
 h2 {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     color: var(--taupe);
 }
 
 h3 {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 25px;
+    font-size: 1rem;
     text-align: center;
     color: var(--green);
 }
 
 p {
     font-family: 'urbanist', sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-align: left;
     color: black;
 }
@@ -50,44 +50,6 @@ p {
     position: relative;
 }
 
-
-/* LINK STYLES */
-
-/* Body Links */
-
-a:link, a:visited {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 35px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    color: var(--green);
-    cursor: pointer;
-}
-
-a:hover {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 35px;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    color: var(--navy);
-    cursor: pointer;
-}
-
-/* Footer Navigation Links */
-
-a.footer-nav:link, a.footer-nav:visited {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 25px;
-    color: var(--navy);
-    text-decoration: underline;
-}
-
-a.footer-nav:hover {
-    color: var(--green);
-}
 
 /* HEADER */
 
@@ -122,33 +84,77 @@ header {
     position: absolute;
 }
 
-#checkbox {
+#hamburger {
+    display: flex;
+    font-size: 4rem;
+    margin-top: 40px;
+}
+
+/* .toggle {
     display: none;
 }
 
-#hamburger {
+
+label div {
     position: flex;
-    margin-top: 35px;
     font-size: 4rem;
     cursor: pointer;
-}
+    margin-top: 40px;
+} */
 
 nav {
     display: none;
 }
 
-/* BODY */
+/* nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    display: none;
+}
+
+nav ul li {
+    font-size: 2 rem;
+    padding-top: 3%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var (--navy);
+}
+
+nav ul a:hover {
+    color: var(--green);
+}
+
+.toggle:checked ~ ul {
+    display: block;
+} */
+
+/* MAIN */
 
 #description {
     width: 90%;
-    margin: auto;
+    margin: 2% 5%;
 }
 
+/* CARD CONTAINER */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .card {
-    position: flex;
-    margin-top: 20px;
+    /* position: flex; */
     width: 90%;
-    margin: 20px 5% 20px 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
     border-top: 7px solid var(--yellow);
 }
 
@@ -172,6 +178,26 @@ nav {
     z-index:-1;
 }
 
+a:link, a:visited {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--green);
+    cursor: pointer;
+}
+
+a:hover {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--navy);
+    cursor: pointer;
+}
 
 /* FOOTER */
 
@@ -215,6 +241,16 @@ form {
 
 /* Footer Nav */
 
+a.footer-nav:link, a.footer-nav:visited {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 25px;
+    color: var(--navy);
+    text-decoration: underline;
+}
+
+a.footer-nav:hover {
+    color: var(--green);
+}
 
 .footer-nav-set {
     position: relative;
@@ -235,9 +271,44 @@ form {
 
 /*MEDIA QUERIES */
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+   
 
-    header {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    .card {
+        width: 45%;
+        margin: 5px;
+    }
+
+    /* .card-title {
+        width: 56%; 
+        height: 35px;
+        margin-top: 3px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .card-image {
+        margin-top: 5px;
+    } */
+
+    a:link, a:visited {
+        font-size: 1.5rem;
+    }
+    
+    a:hover {
+        font-size: 1.5rem;
+    }
+
+    /* header {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -245,9 +316,7 @@ form {
 
     #hamburger {
         display: none;
-    } */
-
-    
+    } */ 
 
    /* .hero {
         height: 200px;
@@ -276,5 +345,5 @@ form {
         width: 80%;
         font-size: 40px;
         justify-content: space-between;
-    } */
-/* } */
+    }  */
+ } 
