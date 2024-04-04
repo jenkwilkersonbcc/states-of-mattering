@@ -136,6 +136,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
     width: 56%; 
     height: 75px;
     padding: 2%;
@@ -198,7 +199,8 @@ form {
     padding: 1%;
     border-style: solid;
     border-width: 1px;
-    border-color: var(--navy)""
+    border-color: var(--navy);
+    border-radius: 10px;
 }
 
 #submit {
@@ -209,6 +211,7 @@ form {
     color: white;
     background-color:#202251;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 /* Footer Nav */
@@ -285,6 +288,7 @@ a.footer-nav:hover {
         color: white;
         background-color: var(--navy);
         text-decoration: none;
+        border-radius: 10px;
         padding: 5px 15px;
         position: relative;
         top: 15px;
@@ -337,26 +341,7 @@ a.footer-nav:hover {
         width: 45%;
     }
 
-
-    /* header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    #email {
+        width: 75%;
     }
-
-    #hamburger {
-        display: none;
-    } */ 
-
-   /* .hero {
-        height: 200px;
-        width: 95%;
-        margin: auto;
-        background-image: url(../images/typewriter.jpg);
-        background-color: #C8B2A7;
-        background-repeat: no-repeat;
-        background-size: contain;
-        border: 5px solid #618C74;
-    } */
-   
  } 
