@@ -16,18 +16,18 @@
             <div class="hero-text">
                 <h1>States of Mattering</h1>
                 <h2>Write your own next story!</h2>
-                <!-- <input type="checkbox" id="toggle-menu" class="toggle">
-                <label for="toggle-menu"> -->
-                    <div id="hamburger">&#9776;</div>
-                <!-- </label> -->
             </div>
         </div>
-        <nav id="nav-top">
+        <div class="hamburger-nav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" name="hamburger-check">
+        </div>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="coaching.html">Coaching Services</a></li>
                 <li><a href="classes.html">Classes & Seminars</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="mattering-blog.html">Blog</a></li>
             </ul>
         </nav>
@@ -41,7 +41,7 @@
     <section class="card-container">
         <div class="card" id="coaching">
             <div class="card-title">
-                <a href=coaching.html>Learn About Our Coaching Services</a>
+                <a class="card-link" href=coaching.html>Learn About Our Coaching Services</a>
             </div>
             <div>
                 <img src="images/im_okay.jpg" alt="I'm okay sign." class="card-image" id="image-coaching">
@@ -57,7 +57,7 @@
         </div>
         <div class="card" id="blog">
             <div class="card-title">
-                <a href=mattering-blog.html>Blog</a>
+                <a class="card-link" href=mattering-blog.html>Blog</a>
             </div>
             <div>
                 <img src="images/coffee.jpg" alt="Coffee cup" class="card-image" id="image-blog">
@@ -65,7 +65,7 @@
         </div>
         <div class="card" id="about">
             <div class="card-title">
-                <a href=about.html>About Us</a>
+                <a class="card-link" href=about.html>About Us</a>
             </div>
             <div>
                 <img src="images/women-group.jpg" alt="Group of women" class="card-image" id="image-about">
@@ -73,11 +73,11 @@
         </div>
     </section>
     <footer> 
-        <form>
+        <section class="footer-container">
+        <form class="footer-form">
             <input type="text" id="email" name="fname" placeholder="Enter your email to join our community!"><br>
             <input type="submit" id="submit" value="submit">
         </form>
-        <!-- <div class="footer-links"> -->
             <div class="footer-nav-set">
                 <a class="footer-nav" href="index.html">Home</a>
                 <a class="footer-nav" href="about.html">About</a>
@@ -85,13 +85,7 @@
                 <a class="footer-nav" href="classes.html">Classes</a>
                 <a class="footer-nav" href="mattering-blog.html">Blog</a>
             </div>
-            <!-- <div class="footer-social-set">
-                <div id="youtube"><a class="footer-social" href="#"><img src="images/social-media-icons/youtube.png" alt="YouTube"></a></div>
-                <div id="tiktok"><a class="footer-social" href="#"><img src="images/social-media-icons/tiktok.png" alt="TikTok"></a></div>
-                <div id="insta"><a class="footer-social" href="#"><img src="images/social-media-icons/instagram.png" alt="Instagram"></a></div>
-                <div id="facebook"><a class="footer-social" href="#"><img src="images/social-media-icons/facebook.png" alt="Facebook"></a></div>
-            </div> -->
-       
+        </section>
     </footer>
     
 </body>

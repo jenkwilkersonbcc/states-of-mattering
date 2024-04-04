@@ -28,6 +28,7 @@ h2 {
     font-size: 2rem;
     text-align: center;
     color: var(--taupe);
+    font-weight: bold;
 }
 
 h3 {
@@ -57,10 +58,10 @@ header {
     position: relative;
     height: 275px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-width: 3px;
+    border-width: 6px;
     border-color: var(--navy);
 }
 
@@ -74,6 +75,7 @@ header {
     background-position: center bottom;
     position: absolute;
     opacity: 0.4;
+    z-index:-1;
 }
 
 .hero-text {
@@ -84,55 +86,26 @@ header {
     position: absolute;
 }
 
-#hamburger {
-    display: flex;
-    font-size: 4rem;
-    margin-top: 40px;
+.hamburger-nav {
+    margin-top: 200px;
 }
 
-/* .toggle {
+label {
+    color: var(--navy);
+    font-size: 3.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+#hamburger {
     display: none;
 }
-
-
-label div {
-    position: flex;
-    font-size: 4rem;
-    cursor: pointer;
-    margin-top: 40px;
-} */
 
 nav {
     display: none;
 }
-
-/* nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 40vh;
-    display: none;
-}
-
-nav ul li {
-    font-size: 2 rem;
-    padding-top: 3%;
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var (--navy);
-}
-
-nav ul a:hover {
-    color: var(--green);
-}
-
-.toggle:checked ~ ul {
-    display: block;
-} */
 
 /* MAIN */
 
@@ -150,7 +123,6 @@ nav ul a:hover {
 
 
 .card {
-    /* position: flex; */
     width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -178,9 +150,9 @@ nav ul a:hover {
     z-index:-1;
 }
 
-a:link, a:visited {
+a.card-link:link, a.card-link:visited {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -189,9 +161,9 @@ a:link, a:visited {
     cursor: pointer;
 }
 
-a:hover {
+a.card-link:hover {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
@@ -243,7 +215,8 @@ form {
 
 a.footer-nav:link, a.footer-nav:visited {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 25px;
+    font-size: .75rem;
+    margin-top: 3px;
     color: var(--navy);
     text-decoration: underline;
 }
@@ -271,9 +244,53 @@ a.footer-nav:hover {
 
 /*MEDIA QUERIES */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
    
+    /* Header */
+    header {
+        height: 225px;
+    }
 
+    .hero-image {
+        height: 225px;
+        background-position: center-top;
+    }
+    
+    /* Navigation */
+
+    label {
+        display:none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        margin: 0 2.5%;
+    }
+
+    ul li {
+        list-style-type: none;
+        color: white;
+        font-family: 'ABeeZee', sans-serif;
+        font-size: 1rem;
+    }
+
+    ul li a {
+        color: white;
+        background-color: var(--navy);
+        text-decoration: none;
+        padding: 5px 15px;
+        position: relative;
+        top: 15px;
+    }
+
+    /* Cards */
     .card-container {
         display: flex;
         flex-wrap: wrap;
@@ -288,25 +305,38 @@ a.footer-nav:hover {
         margin: 5px;
     }
 
-    /* .card-title {
-        width: 56%; 
-        height: 35px;
-        margin-top: 3px;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    .card-image {
-        margin-top: 5px;
-    } */
-
     a:link, a:visited {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     
     a:hover {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
+
+    /* Footer*/
+    .footer-container {
+        display: flex;
+        flex-wrap:wrap;
+        width: 95%;
+        flex-direction: row-reverse;
+    }
+
+    .footer-nav-set {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        margin-left: 3.5%;
+        justify-content: start;
+    } 
+
+    a.footer-nav:link, a.footer-nav:visited {
+        font-size: .85rem;
+    }
+
+    form {
+        width: 45%;
+    }
+
 
     /* header {
         display: flex;
@@ -329,21 +359,4 @@ a.footer-nav:hover {
         border: 5px solid #618C74;
     } */
    
-    /* .card-container {
-        flex-direction: row;
-    } */
-
-    /* .card {
-        margin: 1%;
-    } */
-
-
-    /* #footer-links {
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        width: 80%;
-        font-size: 40px;
-        justify-content: space-between;
-    }  */
  } 
