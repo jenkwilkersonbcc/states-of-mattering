@@ -82,6 +82,10 @@ header {
     background-image: url(../images/coaching-head.jpg);
  }
 
+#hero-classes {
+    background-image: url(../images/classes-head.jpg);
+}
+
 .hero-text {
     width: 100%;
     height: 275px;
@@ -207,7 +211,7 @@ a.card-link:hover {
     cursor: pointer;
 }
 
-/* COACHING FORM */
+/* COACHING & CLASSES FORM */
 
  .submission-form {
     width: 90%;
@@ -243,11 +247,13 @@ a.card-link:hover {
     border-width: 1px;
     border-color: var(--navy);
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #services-label {
     font-size: 1.5rem;
     text-align: left;
+    margin-top: -10px;
 }
 
 #coachingservices {
@@ -404,6 +410,19 @@ a.footer-nav:hover {
         margin: auto;
         flex-direction: row;
         justify-content:space-around;
+        border-top: 7px solid var(--yellow);
+    }
+
+    #coaching, #classes {
+        border-top: none;
+    }
+
+    #virtual-coaching, #indiv-coaching {
+        border-top: none;
+    }
+
+    #creativity-classes, #group-classes {
+        border-top: none;
     }
 
     .card {
@@ -504,6 +523,17 @@ a.footer-nav:hover {
         height: 185px;
     }
 
+    .page-topic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        margin-top: 30px;
+        background-color: none;
+        border-top: 3px solid var(--navy);
+        border-bottom: 3px solid var(--navy);
+    }
+
     /* Cards */
     .card-container {
         width: 100%;
@@ -529,22 +559,17 @@ a.footer-nav:hover {
         width: 100%;
     }
 
-    /* Coaching Page */
-
-    #coaching-topic, #page-topic {
-        text-align: center;
-    }
+    /* Coaching & Classes Pages */
 
      .page-body {
         display: flex;
         flex-direction: row;
         width: 95%;
         margin-left: 2.5%;
-
         margin-top: 15px;
     }
 
-    #coaching-card-container {
+    #coaching-card-container, #classes-card-container {
         margin-top: 15px;
         display: flex;
         flex-direction: column;
@@ -553,7 +578,7 @@ a.footer-nav:hover {
         border-width: 3px; */
     }
 
-    #indiv-coaching, #virtual-coaching{
+    #indiv-coaching, #virtual-coaching, #creativity-classes, #group-classes{
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -564,15 +589,15 @@ a.footer-nav:hover {
         justify-content:  */
     }
 
-    #virtual-coaching {
+    #virtual-coaching, #group-classes {
         border-top: 7px solid var(--yellow);
     }
 
-    #indiv-coaching {
+    #indiv-coaching, #creativity-classes {
         margin-bottom: 15px;
     }
 
-    .coaching-card-title-image {
+    .coaching-card-title-image, .classes-card-title-image{
         /* border-style: solid;
         border-color: red;
         border-width: 3px; */
@@ -589,13 +614,10 @@ a.footer-nav:hover {
         border-width: 3px; */
     }
 
-   #individual, #virtual {
-        font-size: 1.4rem;
-        
+   #individual, #virtual, #creativity, #group {
+        font-size: 1.4rem; 
    }
   
-  
-
     /*Coaching form */
 
     .submission-form {
