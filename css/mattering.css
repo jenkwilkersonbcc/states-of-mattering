@@ -19,24 +19,23 @@
 
 h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 3rem;
+    font-size: 3em;
     text-align: center;
     color: var(--navy);
 }
 
 h2 {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
     text-align: center;
     color: var(--taupe);
-    font-weight: bold;
 }
 
 h3 {
     font-family: 'ABeeZee', sans-serif;
-    font-size: 1rem;
+    font-size: 3rem;
     text-align: center;
-    color: var(--green);
+    color: var(--navy);
 }
 
 p {
@@ -67,7 +66,7 @@ header {
 }
 
 .hero-image {
-    background-image: url(../images/typewriter.jpg);
+    background-image: url(../images/home-head.jpg);
     height: 275px;
     width: 100%;
     background-position: center;
@@ -79,12 +78,23 @@ header {
     z-index:-1;
 }
 
+#hero-coaching {
+    background-image: url(../images/coaching-head.jpg);
+ }
+
 .hero-text {
     width: 100%;
     height: 275px;
     text-align: center;
     margin-top: 2%;
     position: absolute;
+}
+
+#sub-title {
+    font-size: 2rem;
+    color: var(--taupe);
+    text-align: center;
+    font-weight: bold;
 }
 
 .hamburger-nav {
@@ -119,6 +129,18 @@ nav {
     display:none;
 }
 
+#page-topic {
+    background-color: var(--cream);
+    border-top-style: solid;
+    border-top-color: var(--navy);
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--navy);
+    border-bottom-width: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* CARD CONTAINER */
 
 .card-container {
@@ -141,10 +163,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-color: var(--taupe);
+    border-width: 2px;
     border-radius: 15px;
     width: 56%; 
     height: 75px;
     padding: 2%;
+    margin-top: 2%;
     background-color: var(--cream);
     cursor: pointer;
 }
@@ -154,6 +180,10 @@ nav {
     width: 100%;
     margin-top: -60px;
     z-index:-1;
+    border-style: solid;
+    border-color: var(--taupe);
+    border-width: 2px;
+    border-radius: 15px;
 }
 
 a.card-link:link, a.card-link:visited {
@@ -176,6 +206,75 @@ a.card-link:hover {
     color: var(--navy);
     cursor: pointer;
 }
+
+/* COACHING FORM */
+
+ .submission-form {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding-top: 20px;
+    border-top: 7px solid var(--yellow); 
+ }
+
+ #form-heading {
+    font-size: 2rem;
+    color:var(--navy);
+    font-weight: bold;
+    width: 90%;
+    margin-left: 5%;
+ }
+ 
+ .coaching-form {
+    display: flex ;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.coachingform {
+    width: 80%;
+    padding: 1%;
+    margin-top: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--navy);
+    border-radius: 10px;
+}
+
+#services-label {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#coachingservices {
+    margin-top: 10px;
+    font-family: 'urbanist', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    color: black;
+}
+
+.services {
+    margin-top: 3px;
+    padding: 3px;
+    font-family: 'urbanist', sans-serif;
+}
+
+#submit-coaching {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: white;
+    background-color:#202251;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
 
 /* FOOTER */
 
@@ -249,7 +348,6 @@ a.footer-nav:hover {
 }
 
 
-
 /*MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
@@ -321,21 +419,46 @@ a.footer-nav:hover {
         font-size: 1.25rem;
     }
 
+    /* Coaching Form */
+    #form-inputs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #coaching-textbox {
+        width: 55%;
+    }
+
+    #coaching-submit {
+        align-self: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: white;
+        background-color:#202251;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
     /* Footer*/
     .footer-container {
         display: flex;
         flex-wrap:wrap;
         width: 100%;
         flex-direction: row-reverse;
-
     }
 
     .footer-nav-set {
         display: flex;
         flex-direction: row;
-        width: 45%;
+        width: 47%;
         justify-content: start;
     } 
+
+    .footer-nav {
+        margin: 0 15px;
+     }
 
     a.footer-nav:link, a.footer-nav:visited {
         font-size: .85rem;
@@ -406,6 +529,103 @@ a.footer-nav:hover {
         width: 100%;
     }
 
+    /* Coaching Page */
+
+    #coaching-topic, #page-topic {
+        text-align: center;
+    }
+
+     .page-body {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin-left: 2.5%;
+
+        margin-top: 15px;
+    }
+
+    #coaching-card-container {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        /* border-top-style: solid;
+        border-top-color: blue;
+        border-width: 3px; */
+    }
+
+    #indiv-coaching, #virtual-coaching{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 47%;
+        /* border-style: solid;
+        border-color: green;
+        border-width: 3px;
+        justify-content:  */
+    }
+
+    #virtual-coaching {
+        border-top: 7px solid var(--yellow);
+    }
+
+    #indiv-coaching {
+        margin-bottom: 15px;
+    }
+
+    .coaching-card-title-image {
+        /* border-style: solid;
+        border-color: red;
+        border-width: 3px; */
+        width: 35%;
+        margin-right: 15px;
+    }
+
+   .card-description {
+        width: 80%;
+        padding-top: 3%;
+        padding-left: 2%;
+        /* border-style: solid;
+        border-color: purple;
+        border-width: 3px; */
+    }
+
+   #individual, #virtual {
+        font-size: 1.4rem;
+        
+   }
+  
+  
+
+    /*Coaching form */
+
+    .submission-form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        border-top: none;
+        /* border-style: solid;
+        border-color: purple;
+        border-width: 3px; */
+        margin-left: 15px;
+    }
+
+    #form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #coaching-textbox {
+        width: 100%;
+    }
+
+    #coaching-submit {
+        align-self: center;
+        margin: 0;
+        padding:3% 10%;
+    }
+
+   
+
     /* Footer */
     footer {
         height: 80px;
@@ -422,5 +642,3 @@ a.footer-nav:hover {
     }
  }
 
-
- 
