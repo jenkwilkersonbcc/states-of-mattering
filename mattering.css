@@ -1,0 +1,665 @@
+/* Reset Stylesheets */
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color Variables */
+:root {
+    --navy: #202251;
+    --taupe: #595961;
+    --green: #618C74;
+    --tan: #C8B2A7;
+    --yellow: #EBE464;
+    --cream: #F9F4EE;
+}
+
+/* HEADING and FONT STYLES */
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    text-align: center;
+    color: var(--navy);
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--taupe);
+}
+
+h3 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--navy);
+}
+
+p {
+    font-family: 'urbanist', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    color: black;
+}
+
+.divider-line {
+    border: 3px solid var(--yellow);
+    margin: 20px 10%;
+    position: relative;
+}
+
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 275px;
+    width: 100%;
+    margin-bottom: 3%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 6px;
+    border-color: var(--navy);
+}
+
+.hero-image {
+    background-image: url(../images/home-head.jpg);
+    height: 275px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    opacity: 0.4;
+    z-index:-1;
+}
+
+#hero-coaching {
+    background-image: url(../images/coaching-head.jpg);
+ }
+
+#hero-classes {
+    background-image: url(../images/classes-head.jpg);
+}
+
+.hero-text {
+    width: 100%;
+    height: 275px;
+    text-align: center;
+    margin-top: 2%;
+    position: absolute;
+}
+
+#sub-title {
+    font-size: 2rem;
+    color: var(--taupe);
+    text-align: center;
+    font-weight: bold;
+}
+
+.hamburger-nav {
+    margin-top: 200px;
+}
+
+label {
+    color: var(--navy);
+    font-size: 3.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+#hamburger {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+/* MAIN */
+
+#description {
+    width: 90%;
+    margin: 2% 5%;
+}
+
+#main-image {
+    display:none;
+}
+
+#page-topic {
+    background-color: var(--cream);
+    border-top-style: solid;
+    border-top-color: var(--navy);
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--navy);
+    border-bottom-width: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* CARD CONTAINER */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    border-top: 7px solid var(--yellow);
+}
+
+.card-title {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--taupe);
+    border-width: 2px;
+    border-radius: 15px;
+    width: 56%; 
+    height: 75px;
+    padding: 2%;
+    margin-top: 2%;
+    background-color: var(--cream);
+    cursor: pointer;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    margin-top: -60px;
+    z-index:-1;
+    border-style: solid;
+    border-color: var(--taupe);
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+a.card-link:link, a.card-link:visited {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--green);
+    cursor: pointer;
+}
+
+a.card-link:hover {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--navy);
+    cursor: pointer;
+}
+
+/* COACHING & CLASSES FORM */
+
+ .submission-form {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding-top: 20px;
+    border-top: 7px solid var(--yellow); 
+ }
+
+ #form-heading {
+    font-size: 2rem;
+    color:var(--navy);
+    font-weight: bold;
+    width: 90%;
+    margin-left: 5%;
+ }
+ 
+ .coaching-form {
+    display: flex ;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.coachingform {
+    width: 80%;
+    padding: 1%;
+    margin-top: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--navy);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#services-label {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: -10px;
+}
+
+#coachingservices {
+    margin-top: 10px;
+    font-family: 'urbanist', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    color: black;
+}
+
+.services {
+    margin-top: 3px;
+    padding: 3px;
+    font-family: 'urbanist', sans-serif;
+}
+
+#submit-coaching {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: white;
+    background-color:#202251;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: var(--tan);
+}
+
+
+/* Footer Form */
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+#email {
+    width: 80%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--navy);
+    border-radius: 10px;
+}
+
+#submit {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: white;
+    background-color:#202251;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Footer Nav */
+
+a.footer-nav:link, a.footer-nav:visited {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: .75rem;
+    margin-top: 3px;
+    color: var(--navy);
+    text-decoration: underline;
+}
+
+a.footer-nav:hover {
+    color: var(--green);
+}
+
+.footer-nav-set {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.footer-nav {
+   margin: 0 20px;
+}
+
+
+/*MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+   
+    /* Header */
+    header {
+        height: 225px;
+    }
+
+    .hero-image {
+        height: 225px;
+    }
+    
+    /* Navigation */
+
+    label {
+        display:none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        margin: 0 2.5%;
+    }
+
+    ul li {
+        list-style-type: none;
+        color: white;
+        font-family: 'ABeeZee', sans-serif;
+        font-size: 1rem;
+    }
+
+    ul li a {
+        color: white;
+        background-color: var(--navy);
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 5px 15px;
+        position: relative;
+        top: 15px;
+    }
+
+    /* Cards */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        flex-direction: row;
+        justify-content:space-around;
+        border-top: 7px solid var(--yellow);
+    }
+
+    #coaching, #classes {
+        border-top: none;
+    }
+
+    #virtual-coaching, #indiv-coaching {
+        border-top: none;
+    }
+
+    #creativity-classes, #group-classes {
+        border-top: none;
+    }
+
+    .card {
+        width: 45%;
+        margin: 5px;
+    }
+
+    a:link, a:visited {
+        font-size: 1.25rem;
+    }
+    
+    a:hover {
+        font-size: 1.25rem;
+    }
+
+    /* Coaching Form */
+    #form-inputs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #coaching-textbox {
+        width: 55%;
+    }
+
+    #coaching-submit {
+        align-self: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: white;
+        background-color:#202251;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    /* Footer*/
+    .footer-container {
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .footer-nav-set {
+        display: flex;
+        flex-direction: row;
+        width: 47%;
+        justify-content: start;
+    } 
+
+    .footer-nav {
+        margin: 0 15px;
+     }
+
+    a.footer-nav:link, a.footer-nav:visited {
+        font-size: .85rem;
+    }
+
+    form {
+        width: 45%;
+        margin-right: 3%;
+    }
+
+    #email {
+        width: 75%;
+    }
+ } 
+
+ @media screen and (min-width: 1024px) {
+    
+    /* Header */
+    header {
+        margin-bottom: 0%;
+    }
+
+    ul {
+        margin: 0 5%;
+    }
+
+    /* Main*/
+    main {
+        display:flex;
+        flex-direction: row;
+        background-color: var(--cream);
+        padding: 2.5%;
+    }
+
+    #description {
+        width: 75%;
+        margin-left: 0%;
+        align-self: center;
+    }
+
+    #main-image {
+        display:flex;
+        height: 185px;
+    }
+
+    .page-topic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        margin-top: 30px;
+        border-top: 3px solid var(--navy);
+        border-bottom: 3px solid var(--navy);
+    }
+
+    /* Cards */
+    .card-container {
+        width: 100%;
+        border-top: 7px solid var(--yellow);
+        margin-bottom: 3%;
+    }
+
+    .card {
+        width: 22%;
+        max-height: 400px;
+        border-top: none;
+        margin: auto;
+    }
+
+    .card-title {
+        width: 80%; 
+        height: 75px;
+        margin-left: 8%;
+        margin-top: 10px;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    /* Coaching & Classes Pages */
+
+     .page-body {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 15px;
+    }
+
+    #coaching-card-container, #classes-card-container {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        /* border-top-style: solid;
+        border-top-color: blue;
+        border-width: 3px; */
+    }
+
+    #indiv-coaching, #virtual-coaching, #creativity-classes, #group-classes{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 47%;
+        /* border-style: solid;
+        border-color: green;
+        border-width: 3px;
+        justify-content:  */
+    }
+
+    #virtual-coaching, #group-classes {
+        border-top: 7px solid var(--yellow);
+    }
+
+    #indiv-coaching, #creativity-classes {
+        margin-bottom: 15px;
+    }
+
+    .coaching-card-title-image, .classes-card-title-image{
+        /* border-style: solid;
+        border-color: red;
+        border-width: 3px; */
+        width: 35%;
+        margin-right: 15px;
+    }
+
+   .card-description {
+        width: 80%;
+        padding-top: 3%;
+        padding-left: 2%;
+        /* border-style: solid;
+        border-color: purple;
+        border-width: 3px; */
+    }
+
+   #individual, #virtual, #creativity, #group {
+        font-size: 1.4rem; 
+   }
+  
+    /*Coaching form */
+
+    .submission-form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        border-top: none;
+        /* border-style: solid;
+        border-color: purple;
+        border-width: 3px; */
+        margin-left: 15px;
+    }
+
+    #form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #coaching-textbox {
+        width: 100%;
+    }
+
+    #coaching-submit {
+        align-self: center;
+        margin: 0;
+        padding:3% 10%;
+    }
+
+   
+
+    /* Footer */
+    footer {
+        height: 80px;
+    }
+
+    .footer-container {
+        width: 100%;
+        margin: auto;
+        background-color: var(--tan);
+    }
+
+    a.footer-nav:link, a.footer-nav:visited {
+        font-size: 1.15rem;
+    }
+ }
+
