@@ -9,10 +9,10 @@
 :root {
     --navy: #202251;
     --taupe: #595961;
-    --green: #618C74;
     --tan: #C8B2A7;
     --yellow: #EBE464;
     --cream: #F9F4EE;
+    --green: #618C74;
 }
 
 /* HEADING and FONT STYLES */
@@ -25,17 +25,25 @@ h1 {
 }
 
 h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--taupe);
-}
-
-h3 {
     font-family: 'ABeeZee', sans-serif;
     font-size: 3rem;
     text-align: center;
-    color: var(--navy);
+    color: var(--green);
+    /* font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--taupe); */
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--taupe);
+    /* font-family: 'ABeeZee', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--navy); */
 }
 
 p {
@@ -56,7 +64,7 @@ p {
 
 header {
     position: relative;
-    height: 275px;
+    height: 270px;
     width: 100%;
     margin-bottom: 3%;
     border-top-style: solid;
@@ -66,7 +74,6 @@ header {
 }
 
 .hero-image {
-    background-image: url(../images/home-head.jpg);
     height: 275px;
     width: 100%;
     background-position: center;
@@ -78,12 +85,27 @@ header {
     z-index:-1;
 }
 
+#hero-home {
+    background-image: url(../images/home-head.jpg);
+}
+
 #hero-coaching {
-    background-image: url(../images/coaching-head.jpg);
+    background-image: url(../images/coaching-head1.jpg);
+    background-position: center top;
  }
 
 #hero-classes {
-    background-image: url(../images/classes-head.jpg);
+    background-image: url(../images/classes-head1.jpg);
+}
+
+#hero-about {
+    background-image: url(../images/about-head.jpg);
+    background-position: center top;
+}
+
+#hero-blog {
+    background-image: url(../images/blog-head.jpg);
+    background-position: center bottom;
 }
 
 .hero-text {
@@ -147,7 +169,7 @@ nav {
 
 /* MAIN */
 
-#description {
+.description {
     width: 90%;
     margin: 2% 5%;
 }
@@ -167,6 +189,30 @@ nav {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+#description-about {
+    width: 90%;
+    margin: 0 5%;
+}
+
+#history-subtitle {
+    width: 75%;
+    border-top: solid 2.5px var(--navy);
+    padding-top: 20px;
+    margin: auto;
+}
+
+/* #main-blog {
+    margin-top: 15px auto;
+    
+} */
+
+#description-blog {
+    width: 90%;
+    margin: 15px 5%;
+    padding-bottom: 15px;
+}
+
 
 /* CARD CONTAINER */
 
@@ -305,7 +351,46 @@ a.card-link:hover {
     border-radius: 10px;
 } 
 
+/* ABOUT US */
 
+.team-member {
+    width: 85%;
+    margin: 5% auto;
+    padding-top: 20px;
+    border-top: 7px solid var(--yellow); 
+}
+
+.team-member-photo {
+    width: 70%;
+    margin: 5% 15%;
+}
+
+.team-member-description {
+    background-color: var(--green);
+    color: white;
+    width: 76%;
+    margin: auto;
+    padding: 5%;
+
+}
+
+/* BLOG POSTS */
+
+.blog-post-title {
+    border-top: solid var(--yellow) 7px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.blog-post-photo {
+    width: 86%;
+    margin: 10px 7%;
+}
+
+.blog-post-description {
+    width: 86%;
+    margin: 10px 7% 25px 7%;
+}
 /* FOOTER */
 
 footer {
@@ -488,6 +573,12 @@ a.footer-nav:hover {
         border-radius: 10px;
     }
 
+    /* About Page Body */
+    #page-body-about {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Footer*/
     .footer-container {
         display: flex;
@@ -529,16 +620,17 @@ a.footer-nav:hover {
     }
 
     ul {
-        margin: 200px 5% 0 5%;
+        margin: 25px 5% 0 5%;
     }
 
-    /* Main*/
+    /* Main */
     main {
         display:flex;
         flex-direction: row;
         background-color: var(--cream);
         padding: 2.5%;
     }
+
 
     #description {
         width: 75%;
@@ -561,6 +653,15 @@ a.footer-nav:hover {
         border-bottom: 3px solid var(--navy);
     }
 
+    #history-subtitle {
+        width: 75%;
+        border-top: none;
+        padding-top: 20px;
+        margin: auto;
+    }
+    
+  
+    
     /* Cards */
     .card-container {
         width: 100%;
@@ -594,6 +695,12 @@ a.footer-nav:hover {
         width: 95%;
         margin-left: 2.5%;
         margin-top: 15px;
+    }
+
+    #page-body-about {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
 
     #coaching-card-container, #classes-card-container {
@@ -673,7 +780,17 @@ a.footer-nav:hover {
         padding:3% 10%;
     }
 
-   
+    /* About Page */
+    #page-body-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .team-member {
+        width: 40%;
+    }
+
 
     /* Footer */
     footer {
