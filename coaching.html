@@ -70,9 +70,9 @@
             <form class="coaching-form" action="#">
                 <div id="form-inputs">
                     <div id = "coaching-textbox">
-                        <input class = "coachingform" type="text" name="fname" placeholder="First Name"><br>
+                        <input class = "coachingform" type="text" name="fname" placeholder="First Name" required><br>
                         <input class = "coachingform" type="text" name="lname" placeholder="Last Name"><br>
-                        <input class = "coachingform" type="email" name="email" placeholder="E-mail Address"><br>
+                        <input class = "coachingform" type="email" name="email" placeholder="email@mail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
                     </div>
                     <div id = "coachingservices">
                         <h3 id = "services-label">I would like to learn more about:</h3><br>
@@ -92,7 +92,7 @@
     <footer> 
         <div class="footer-container">
         <form class="footer-form">
-            <input type="email" id="email" name="email" placeholder="Enter your email to join our community!"><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email to join our community!" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
             <input type="submit" id="submit" value="Submit">
         </form>
             <div class="footer-nav-set">

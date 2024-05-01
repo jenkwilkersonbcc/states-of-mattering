@@ -160,11 +160,13 @@ nav {
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'ABeeZee', sans-serif;
+    transition: font-weight;
 }
 
 .menu li a:hover {
     color: var(--yellow);
     transition: .3s;
+    font-size: 2.0rem;
 }
 
 /* MAIN */
@@ -174,7 +176,7 @@ nav {
     margin: 2% 5%;
 }
 
-#main-image {
+#main-video {
     display:none;
 }
 
@@ -638,9 +640,10 @@ a.footer-nav:hover {
         align-self: center;
     }
 
-    #main-image {
+    #main-video {
         display:flex;
         height: 185px;
+        
     }
 
     .page-topic {
@@ -686,6 +689,8 @@ a.footer-nav:hover {
     .card-image {
         width: 100%;
     }
+
+
 
     /* Coaching & Classes Pages */
 
@@ -808,3 +813,22 @@ a.footer-nav:hover {
     }
  }
 
+ /* Animate change Classes card title on home page to navy */
+
+ @keyframes classbackground {
+    from {
+        background-color: var(--cream);}
+    to {
+        background-color: var(--yellow);}
+ }
+
+ /* The element to apply the animation to. */
+
+ #card-title-classes {
+    animation-name: classbackground;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+ }
